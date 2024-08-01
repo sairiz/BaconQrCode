@@ -42,9 +42,9 @@ final class ImagickImageBackEnd implements ImageBackEndInterface
 
     public function __construct(string $imageFormat = 'png', int $compressionQuality = 100)
     {
-        if (! class_exists(Imagick::class)) {
-            throw new RuntimeException('You need to install the imagick extension to use this back end');
-        }
+        // if (! class_exists(Imagick::class)) {
+        //     throw new RuntimeException('You need to install the imagick extension to use this back end');
+        // }
 
         $this->imageFormat = $imageFormat;
         $this->compressionQuality = $compressionQuality;
